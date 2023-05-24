@@ -2,7 +2,7 @@
     #shadowone{
         width: 70%;
         margin-top: 20px;
-        margin-left: 30px;
+        margin-left: 60px;
     }
     #divone, #divtwo, #divthree, #divfour, #divfive #imgsix{
         margin-left: 40px;
@@ -16,14 +16,7 @@
     #shadowtwoo{
         display: none;
     }
-    #shadowthree{
-        font-size: 20px;
-        margin-left: 100px;
-    }
-    #shadowfour{
-        font-size: 20px;
-        margin-left: 100px;
-    } 
+
     #col{
         display: none;
     }
@@ -45,6 +38,44 @@
     }
     #adds{
         width: 100%;
+        display: none;
+    }
+    #image{
+        margin-left: 50px;
+        margin-top: 100px;
+        height: 220px;
+        width: 220px;
+        display: none;
+    }
+    #member{
+        color: black;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+    #mail, #pass{
+        width: 80%;
+        margin-left: 20px;
+        
+    }
+    #sign {
+        width: 80%;
+        margin-left: 100px;
+        background-color: green;
+        border-radius: 50px;
+        margin-left: 20px;
+    }
+    #forgot{
+        margin-left: 40px;
+        font-size: 10px;
+        margin-top: 50px;
+    }
+    #create{
+        margin-left: 40px;
+        /* margin-top: 200px !important; */
+        font-size: 10px;
+        color: black;
+        text-decoration: none;
+    
     }
     
 }

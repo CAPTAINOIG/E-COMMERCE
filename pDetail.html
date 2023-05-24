@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="displayCart()">
+<div id="disp"></div>
+<h1>welcome</h1>
+    <script>
+
+        var theStorage  = localStorage.getItem('dynamicProduct')
+        if (theStorage) {
+            var theData  = JSON.parse(theStorage)
+            console.log(theData)
+            // console.log(theStorage);
+        }
+        
+        localStorage.getItem('dynamicProduct')
+        const displayCart =()=>{
+            disp.innereHTML = `<h1>${theData}</h1>`
+            for (let index = 0; index < theData.length; index++) {
+                console.log(theData);
+                
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

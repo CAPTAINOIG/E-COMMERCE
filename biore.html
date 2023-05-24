@@ -96,7 +96,7 @@
                  <p class="fs-5 fw-bold text-light">Biore UV aqua Rich watery Essence</p>
                  <span class="fw-bold text-decoration-line-through fs-5 text-light">#9,800</span>
                  <span class="fw-bold text-decoration-none text-light fs-5">#2,800</span>
-                <div><button onclick="butbiore()" id="butbiore" class="btn btn-lg bg-primary text-light">Add to cart</button></div>
+                <div><button onclick="butbiore('Biore UV aqua Rich watery Essence', 2800)" id="butbiore" class="btn btn-lg bg-primary text-light">Add to cart</button></div>
                 </div>
                 
                </div>
@@ -111,8 +111,59 @@
 
     <script>
         // var biore = ["biore"]
-        const butbiore=()=>{
-            alert("product added successfully")
+        const butbiore=(productName, realPrice)=>{
+            // alert("product added successfully")
+
+            console.log(productName, realPrice)
+
+            
+            if (localStorage.getItem('ecommerCart')) {
+              console.log('here')
+              var sameCart  = JSON.parse( localStorage.getItem('ecommerCart'))
+              console.log(sameCart)
+              // [{}, {}]
+
+              var findProduct  = sameCart.find(eachP => eachP.productName === productName ) // {quantity}
+
+              if (findProduct) {
+                findProduct.quatity++
+
+                thePosition = sameCart.indexOf(findProduct) // 0 , 1, 2
+
+                sameCart[thePosition] = findProduct
+
+                localStorage.setItem('ecommerCart', JSON.stringify(sameCart))
+              }else{
+                    var thecart  = {
+                    productName: productName,
+                    price: realPrice,
+                    quatity: 1
+                  }
+                  sameCart.push(thecart)
+                  localStorage.setItem('ecommerCart', JSON.stringify(sameCart))
+              }
+
+              
+            }else {
+
+              console.log('there')
+              // create 
+              var theEcommerce  = []
+              var thecart  = {
+                productName,
+                price: realPrice,
+                quatity: 1
+              }
+
+              theEcommerce.push(thecart)
+
+
+              localStorage.setItem('ecommerCart', JSON.stringify(theEcommerce))
+            }
+
+
+// [{}, {}, {}]
+
             // console.log(biore);
             // disp.innerHTML = `<h1 id="bione">${biore}</h1>`
         }

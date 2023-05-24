@@ -189,7 +189,7 @@
           </h5>
           <div id="shadowone" class="col-lg-2 shadow rounded bg-light">
             <div style="width: 11rem;">
-              <a href="biore.html"><img id="divone" src="./image/biore real.jpg" class="card-img-top" alt="..."></a>
+              <a onclick="saveTemp('./image/biore real.jpg', 2800, 'Biore UV aqua Rich Water')" ><img id="divone" src="./image/biore real.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                  <p><a id="shadowtwo" class="text-decoration-none fw-bold text-dark" href="biore.html">Biore UV aqua Rich Wate...</a></p>
                <p><a id="shadowthree" href="biore.html" class="fw-bold text-decoration-none text-dark">#2,800</a></p>
@@ -199,29 +199,29 @@
           </div>
           <div id="shadowone" class="col-lg-2 shadow rounded bg-light">
             <div style="width: 11rem;">
-              <a href="eaget.html"><img id="divtwo" src="./image/eaget.jpg" class="card-img-top" alt="..."></a>
+              <a onclick="saveTemp('./image/eaget.jpg', 2630, 'Eaget Flash Drive 3.0')"><img id="divtwo" src="./image/eaget.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
-                <p><a class="text-decoration-none text-dark fw-bold"  href="eaget.html">Eaget Flash Drive 3.0 ...</a></p>
-              <p> <a href="eaget.html" class="fw-bold text-decoration-none text-dark">#2,630</a></p>
+                <p><a class="text-decoration-none text-dark fw-bold" >Eaget Flash Drive 3.0 ...</a></p>
+              <p> <a  class="fw-bold text-decoration-none text-dark">#2,630</a></p>
                 <a href="eaget.html" class="fw-bold text-decoration-line-through text-dark">#9,800</a>
               </div>
             </div>
           </div>
           <div id="shadowone" class="col-lg-2 shadow rounded bg-light">
             <div style="width: 11rem;">
-              <a href="adidas.html"><img id="divthree" src="./image/ADIDAS Vs Pace Lifestyle Shoes Men (1).jpg" class="card-img-top" alt="..."></a>
+              <a onclick="saveTemp('./image/ADIDAS Vs Pace Lifestyle Shoes Men (1)', 2900, 'ADIDAS Vs Pace Lifestyle Shoe')"><img id="divthree" src="./image/ADIDAS Vs Pace Lifestyle Shoes Men (1).jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
-                <p><a class="text-decoration-none text-dark fw-bold"  href="adidas.html">ADIDAS Vs Pace Lifestyle Shoe...</a></p>
-               <p><a href="adidas.html" class="fw-bold text-decoration-none text-dark">#2,900</a></p>
-                <a href="adidas.html" class="fw-bold text-decoration-line-through text-dark">#9,800</a>
+                <p><a class="text-decoration-none text-dark fw-bold"  href="">ADIDAS Vs Pace Lifestyle Shoe...</a></p>
+               <p><a class="fw-bold text-decoration-none text-dark">#2,900</a></p>
+                <a class="fw-bold text-decoration-line-through text-dark">#9,800</a>
               </div>
             </div>
           </div>
           <div id="shadowone" class="col-lg-2 shadow rounded bg-light">
             <div style="width: 11rem;">
-              <a href="skyrun.html"><img id="divfour" src="./image/Skyrun 260 Litres Chest Freezer (BD-260A) - Grey (1).jpg" class="card-img-top" alt="..."></a>
+              <a onclick="saveTemp('./image/Skyrun 260 Litres Chest Freezer (BD-260A) - Grey (1).jpg', 2900, 'Skyrun 260 Litres Chest Freezer')"></a><img id="divfour" src="./image/Skyrun 260 Litres Chest Freezer (BD-260A) - Grey (1).jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
-                <p><a class="text-decoration-none text-dark fw-bold"  href="skyrun.html">Skyrun 260 Litres Chest Freezer</a></p>
+                <p><a class="text-decoration-none text-dark fw-bold">Skyrun 260 Litres Chest Freezer</a></p>
                <p><a href="skyrun.html" class="fw-bold text-decoration-none text-dark">#22,200</a></p>
                 <a href="skyrun.html" class="fw-bold text-decoration-line-through text-dark">#29,800</a>
               </div>
@@ -739,6 +739,15 @@
             // user1.value =59
             // user2.value =15
           }
+
+          function saveTemp(image, price, pName){
+            var map  = {
+              image, price, pName
+            }
+            localStorage.setItem('dynamicProduct', JSON.stringify(map))
+            window.location.href="pDetail.html"
+          }
+
       </script>
 
             <!-- FOR USE, LATER
