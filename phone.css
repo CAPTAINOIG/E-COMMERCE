@@ -1,0 +1,50 @@
+@media(max-width: 600px){
+    #shadowone{
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    #divone, #divtwo, #divthree, #divfour, #divfive #imgsix{
+        margin-left: 40px;
+      
+    }
+    /* #shadowtwo{
+        width: 90%;
+        margin-top: 70px;
+        margin-left: 30px;
+    } */
+    #shadowtwoo{
+        display: none;
+    }
+    #shadowthree{
+        font-size: 20px;
+        margin-left: 100px;
+    }
+    #shadowfour{
+        font-size: 20px;
+        margin-left: 100px;
+    } 
+    #col{
+        display: none;
+    }
+    #ten{
+        margin-left: -30px;
+    }
+      .up, .tele, .groce, .ref, .elect, .bestt{
+        font-size: 13px;
+        margin-left: 120px !important;
+    } 
+    #tab{
+        margin-left: 100px !important;
+    }
+    .men{
+        margin-left: 100px !important;
+    }
+    .best{
+        margin-left: 180px !important;
+    }
+    #adds{
+        width: 100%;
+    }
+    
+}

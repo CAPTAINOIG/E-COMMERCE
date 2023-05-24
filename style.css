@@ -5,10 +5,12 @@
     padding: 0;
 }
 #body{
-/* background-color: rgb(241, 241, 242); */
 width: 100%;
 background-color: seagreen;
 overflow-x: hidden;
+}
+#bodydash{
+    background-color: blue;
 }
 .secBiore{
     background-color: crimson;
@@ -19,12 +21,24 @@ overflow-x: hidden;
 section{
     width: 100vw;
 }
+#cartt{
+    margin-left: -20px;
+}
+#cartt:hover{
+    color: orange;
+}
 #image{
     width: 100%;
 }
 #button{
     border: 1px solid orange;
     background-color: orange;
+    margin-left: 15px;
+    width: 130px;
+}
+#button2{
+    border: 1px solid orange;
+    background-color: red;
     margin-left: 15px;
     width: 130px;
 }
@@ -92,11 +106,12 @@ section{
 .logistics:hover{
     color: blue;
 }
-/* #nav{
-    position: fixed;
+.hall{
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 1;
-} */
+}
 #jumi{
     font-weight: bold;
     font-size: 30px;
@@ -225,10 +240,13 @@ li{
 .oe{
     text-decoration: none;
 }
-#three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #ten:hover {
+#three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #ten:hover, #tenn:hover {
     transform: scale(1.1);
 }
 .tab, .up, .tele, .groce, .ref, .elect, .men, .best{
+    font-size: 13px;
+}
+.bestt{
     font-size: 13px;
 }
 
@@ -284,12 +302,119 @@ li{
 
 
 #butbiore{
-    width: 63%;
+    width: 50%;
     /* height: 80%; */
 }
-/* #bione{
-    border: 2px solid red;
-    background-color: red;
-    width: 100px;
-
+#eaget{
+    width: 50%;
+    /* height: 80%; */
+}
+#prov1{
+    height: 60%;
+    margin-top: 30px;
+}
+#adidas{
+    width: 50%;
+    /* height: 80%; */
+}
+#skyrun{
+    width: 50%;
+}
+#eilifinte{
+    width: 50%;
+}
+#oraimo{
+    width: 50%;
+    background-color: rgb(155,196,48);
+}
+#tu{
+    color: rgb(155,196,48);
+}
+.jumia{
+    font-size: 12px;
+}
+.favi{
+    margin-left: 5px;
+    margin-top: -15px;
+}
+.twot{
+    color: white;
+    margin-left: 40px;
+    margin-top: -30px; 
+    font-size: 13px; 
+    font-weight: bold;
+}
+.de{
+    font-size: 12px;
+    color: white;
+    margin-top: -10px;
+    margin-left: 50px;
+}
+/* twoty{
+    margin-top: -50px;
+    height: 30px;
+    border: 2px solid orange;
+    border-radius: 100%;
+    margin-top: 50px;
+    margin-left: 50px;
 } */
+#maleone:hover{
+    border: 2px solid orange;
+    color: orange;
+}
+#jumtwo{
+    font-size: 10px;
+    font-weight: bold;
+}
+#mailtwo{
+    height: 40px;
+    width: 200px;
+}
+.load{
+    color: white;
+    font-size: 8px;
+    border: 1px solid white;
+    width: 90px;
+    margin-left: 20px;
+}
+.appy{
+    margin-left: 20px;
+}
+.load:hover{
+    border: 2px solid orange;
+    color: orange;
+}
+#fall{
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+}
+#fall1{
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+}
+#conn{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+#mag{
+    background-color: rgb(83,83,87);
+}
+#face{
+    height: 20px;
+    width: 50px;
+}
+.hr{
+    color: white;
+    margin-top: 100px;
+}
+.paytwo, .foodtwo, .partytwo, .logisticstwo{
+    color: white;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.paytwo:hover, .foodtwo:hover, .partytwo:hover, .logisticstwo:hover{
+    color: orange;
+}
