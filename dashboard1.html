@@ -83,9 +83,6 @@
               </div>
             </nav>
           </div>
-  
-  
-  
        <div class="container">
         <div class="row">
           <div id="prov" class="col-lg-2 bg-light rounded shadow">
@@ -140,7 +137,7 @@
             </button>
           </div></div>
           <div id="fee" class="col-lg-2">
-            <img id="adds" class="rounded" src="./image/Free Delivery (2).png" alt="">
+            <img id="adds" class="rounded mt-2" src="./image/Free Delivery (2).png" alt="">
             <img id="adds" class="mt-3 rounded" src="./image/JFORCE (2).png" alt="">
           </div>
         </div>
@@ -747,9 +744,9 @@
             // user1.value =59
             // user2.value =15
           }
-    //      if(!localStorage.userIndex){
-    //     window.location.href = "dashboard1.html"
-    //   }
+         if(!localStorage.userIndex){
+        window.location.href = "signIn.html"
+      }
     var allCustomers = JSON.parse(localStorage.getItem ("fixed"))
     var inputStorage = localStorage.getItem("userIndex")
     // alert("Welcome, " + " " + allCustomers[inputStorage].email + " " + " " + allCustomers[inputStorage].password)
