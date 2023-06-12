@@ -394,6 +394,13 @@ li{
     color: white;
     font-weight: bold;
 }
+#carting{
+    text-decoration: none;
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+    /* margin-left: 100px; */
+}
 #conn{
     text-decoration: none;
     color: white;
@@ -417,4 +424,34 @@ li{
 }
 .paytwo:hover, .foodtwo:hover, .partytwo:hover, .logisticstwo:hover{
     color: orange;
+}
+#products{
+    float: right;
+    margin-top: -210px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+#producta{
+    float: right;
+    margin-top: -170px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#productc{
+    float: right;
+    margin-top: -150px;
+    /* font-weight: bolder; */
+}
+#delete{
+    float: right;
+    margin-top: -130px;
+}
+#add{
+    float: right;
+    margin-top: -100px;
+}
+.img-fluid1{
+    width: 50%;
+    height: 70%;
+
 }

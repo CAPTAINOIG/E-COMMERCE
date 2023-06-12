@@ -68,8 +68,10 @@
                 <li><a class="dropdown-item" href="#">Order cancellation</a></li>
               </ul>
           </li>
-         <img src="./image/3.png" height="20px" width="20px" alt="">
-         <span id="cartt">Cart</span> 
+         <!-- <img src="./image/3.png" height="20px" width="20px" alt="">
+         <span id="cartt">Cart</span>  -->
+         <a id="carting" href="./product.html"><img src="./image/3.png" height="20px" width="20px" alt="">
+          <span id="cartt">Cart</span></a> 
               </div>
             </div>
             </div>
@@ -722,6 +724,10 @@
     </section>
 
       <script>
+         var sameCart  = JSON.parse(localStorage.getItem('ecommerCart'))
+            console.log(sameCart.length)
+            document.getElementById("cartt").innerHTML = `${sameCart.length}`
+          
         user2.value = 15
         user1.value =59
         user.value = 59
@@ -743,6 +749,7 @@
               image, price, pName
             }
             localStorage.setItem('dynamicProduct', JSON.stringify(map))
+            console.log(localStorage.dynamicProduct);
             window.location.href="pDetail.html"
           }
 
